@@ -6,9 +6,10 @@ const apiKeyCheck = (req, res, next) => {
     if(!apiKey || apiKey !== process.env.API_KEY){
         res.status(401).json("falha ao validar chave de API");
     }
-
     //permite a requisição, caso contrário
-    next();
-}
+    else {
+        next();
+    }
+};
 
 export default apiKeyCheck;
