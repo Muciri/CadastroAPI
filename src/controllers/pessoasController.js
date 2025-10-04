@@ -18,7 +18,7 @@ export const getPessoa = async (req, res) => {
 
 export const criarPessoa = async (req, res) => {
     await pool.query(`INSERT INTO pessoas VALUES(DEFAULT, '${req.body.nome}', ${req.body.idade}, ${req.body.altura});`);
-    res.status(200).json('pessoa criada!');
+    res.status(201).json('pessoa criada!');
 };
 
 export const deletarPessoa = async (req, res) => {
