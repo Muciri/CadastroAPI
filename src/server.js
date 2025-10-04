@@ -2,7 +2,7 @@ import express, { json } from 'express';
 import dotenv from 'dotenv';
 
 //importando rotas
-import pessoasRouter from './src/routes/pessoas.js';
+import pessoasRouter from './routes/pessoas.js';
 
 //carrega as variáveis de ambiente do arquivo .env
 dotenv.config();
