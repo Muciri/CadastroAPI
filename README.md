@@ -13,7 +13,7 @@ api **beeem** simples feita em Express para aprender noções básicas de APIs e
    
 3. rode o servidor
 ```javascript
-    node server.js
+    npm run start
 ```
 
 ## variáveis de ambiente
